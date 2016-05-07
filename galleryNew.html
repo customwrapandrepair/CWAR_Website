@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" href="css/plusgallery.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/plusgallery.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+	<div class="middle">
+		<div class="left" style="padding-top:10px;">
+		<a href="index.html">
+		  <img src="img/logo.png" alt="Logo" style="height:100px;">
+		</a>
+		</div>
+		<div class="right banner">
+		<a href="index.html">
+		<img src="img/Title.png" alt="Title" >
+		</a>
+		</div>
+	</div>
+</div>
+<div id="content">
+<div id="nav">
+	<div class="middle">
+
+
+		<div class="right">
+			<ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			<ul>
+		</div>
+			<div class="split right">&nbsp;</div>
+		<div class="right">
+			<ul>
+				<li>Services</li>
+				<li><a href="wrap.html">Wrap</a></li>
+				<li><a href="repair.html">Repair</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+
+<div class="bodLight">
+	<div class="middle">
+		<h1>Quality Custom Work</h1>
+		
+		<div style="clear:both;"></div>
+
+	</div>	
+</div>
+<div class="bodDark">
+	<div class="middle">
+		<h1>Gallery</h1>
+
+<a href="#" onclick="loadGallery('6053543090273872481'); return false;">Wrap</a>
+<a href="#" onclick="loadGallery('6053569197237500497'); return false;">Repair</a>
+<a href="#" onclick="loadGallery('6053569804009189073'); return false;">General</a>
+<div id="gallerywrapper">
+</div>
+
+		<script>
+
+    			var loadGallery = function(id){
+      				//DOM loaded
+      				$('#gallerywrapper').html('<div id="plusgallery" data-type="google" data-userid="102038927029423987235" data-limit=30 data-album-id="' + id + '"></div>');
+				$('#plusgallery').plusGallery();
+    			};
+
+		</script>
+
+		<div style="clear:both;"></div>
+	</div>
+</div>
+</div>
+
+<div id="footer">
+	<div class="middle">
+		<ul>
+		 <li><a href="wrap.html">Wrap</a></li>
+		 <li><a href="repair.html">Repair</a></li>	 
+		 <li>|</li>
+		 <li><a href="index.html">Home</a></li>
+		 <li>|</li>
+    		 <li><a href="about.html">About Us</a></li>
+		 <li><a href="contact.html">Contact Us</a></li>
+		</ul>
+<p class="finePrint">© 2014 Custom Wrap and Repair. All rights reserved.</p>
+	</div>	
+</div>
+</div>
+
+</body>
+</html>
